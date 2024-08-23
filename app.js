@@ -10,7 +10,7 @@ const config = require('./config')
 const app = express()
 
 app.use(bodyParser.json())
-app.use(cors({ origin: 'https://anki-backend.vercel.app/' }))
+app.use(cors({ origin: 'http://localhost:5173' }))
 app.use(express.json())
 app.use('/api/auth', authRoutes)
 app.use('/api/cards', cardRoutes)
